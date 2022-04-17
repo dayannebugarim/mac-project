@@ -1,0 +1,196 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: 'SF Pro';
+    src: url('../fonts/SFPRODISPLAYREGULAR.OTF') format('opentype');
+}
+
+:root{
+    --button_r: #FF6159;
+    --button_y: #FFBD2E;
+    --button_g: #28CA42;
+
+    --fundo_box: #ECECEC;
+    --cor0: #D8D7D8;
+    --cor1: #999699;
+    --cor2: #353435;
+
+    --grad0: #cccacc;
+    --grad1: #D1D0D1;
+    --grad2: #E1E0E1;
+
+    --fonte: 'SF Pro', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: white;
+    font-family: var(--fonte);
+    color: var(--cor2);
+}
+
+header{
+    padding: 60px 5px;
+}
+
+header > h1{
+    font-size: 3em;
+    text-align: center;
+    
+}
+
+header > h1::after{
+    content: '';
+    background-image: linear-gradient(to right, var(--button_r), var(--button_y), var(--button_g));
+    width: 200px;
+    height: 1px;
+    display: block;
+    margin: 5px auto 0px auto;
+}
+
+header > p{
+    padding: 5px;
+    text-align: center;
+    color: var(--cor1);
+    
+}
+
+header > p::after{
+    content: '';
+    background-image: linear-gradient(to right, var(--button_r), var(--button_y), var(--button_g));
+    width: 200px;
+    height: 1px;
+    display: block;
+    margin: 5px auto 0px auto;
+}
+
+main h1{
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 0px 3px 4px 3px;
+    margin: -1px -1px 0px -1px;
+    background-image: linear-gradient(to top, var(--grad0),var(--grad1),var(--grad2));
+    border: 1px solid var(--cor1);
+    border-radius: 7px 7px 0px 0px;
+    box-shadow: inset 0px 1px 1px white;
+}
+
+.top_buttons{
+    background-color: #2a292a;
+    height: 15px;
+    width: 15px;
+    margin: 5px 5px 5px 10px;
+    display: inline-block;
+}
+
+#red{
+    border-radius: 50%;
+    background-color: var(--button_r);
+    border: 1px solid #e75149;
+    position: absolute;
+    top: 0.2%;
+}
+#red:hover{
+    box-shadow: 0px 0px 8px #ce4942;
+    transition: 0.3s;
+}
+
+
+#yellow{
+    border-radius: 50%;
+    background-color: var(--button_y);
+    border: 1px solid #e9ac29;
+    position: absolute;
+    top: 0.2%;
+    left: 4%;
+}
+#yellow:hover{
+    box-shadow: 0px 0px 8px #b3831c;
+    transition: 0.3s;
+}
+
+#green{
+    border-radius: 50%;
+    background-color: var(--button_g);
+    border: 1px solid #20aa37;
+    position: absolute;
+    top: 0.2%;
+    left: 8%;
+}
+#green:hover{
+    box-shadow: 0px 0px 8px #1c9d32;
+    transition: 0.3s;
+}
+
+.button{
+    padding: 5px;
+    display: inline-block;
+    background-color: white;
+    border: 1px solid #b9b7b9;
+    border-radius: 7px;
+    box-shadow: 1px 1px 1px #3534351a;
+    font-weight: normal;
+    padding: 7px; 
+}
+.button:hover{
+    box-shadow: 1px 1px 3px rgba(53, 52, 53, 0.286);
+    transition: 0.7s;
+}
+
+.button > a{
+    color: var(--cor2);
+    text-decoration: none;
+}
+#btt0{
+    position: absolute;
+    top: 85%;
+    left: 4%;
+}
+#btt0:hover{
+    box-shadow: inset 1px -1px 1px var(--fundo_box);
+    border: 1px solid #FF82F3;
+    background-color: rgba(255, 130, 243, 0.284);    transition: 1s;
+}
+#btt1{
+    position: absolute;
+    top: 85%;
+    left: 80%;
+}
+#btt2{
+    position: absolute;
+    top: 85%;
+    left: 90%;
+}
+main p{
+    text-align: left;
+    padding: 10px 15px;
+    font-size: 1.2em;
+}
+
+.borda{
+    background-color: var(--fundo_box);
+    margin: 5px;
+    width: 750px;
+    height: 450px;
+    border: 1px solid var(--cor1);
+    border-radius: 7px;
+    box-shadow: 0px 10px 28px rgba(0, 0, 0, 0.302);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imagem{
+    margin: 0px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
