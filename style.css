@@ -195,3 +195,7 @@ main p{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.imagem:hover{
+    height: 280px;
+    transition: 1.3s;
+}
