@@ -153,20 +153,19 @@ main h1{
 }
 #btt0:hover{
     box-shadow: inset 1px -1px 1px var(--fundo_box);
-    border: 1px solid #FF82F3;
-    background-color: rgba(255, 130, 243, 0.284);    
+    border: 1px solid #FC828D;
+    background-color: #ffb7ae99;    
     transition: 1s;
 }
 #btt1{
     position: absolute;
     top: 85%;
-    left: 90%;
-    
+    left: 80%;
 }
 #btt2{
     position: absolute;
     top: 85%;
-    left: 80%;
+    left: 90%;
 }
 main p{
     text-align: left;
